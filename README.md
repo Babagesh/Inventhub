@@ -68,10 +68,15 @@ The following **additional** features are implemented:
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
-
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-
-GIF created with ...  
+<div>
+    <a href="https://www.loom.com/share/6d4bceb2a9cb4ede89cc5584d0b840f5">
+      <p>inventhub - Watch Video</p>
+    </a>
+    <a href="https://www.loom.com/share/6d4bceb2a9cb4ede89cc5584d0b840f5">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/6d4bceb2a9cb4ede89cc5584d0b840f5-44a2ce75d0e362a4-full-play.gif">
+    </a>
+  </div>
+GIF created with Loom 
 
 
 ## Notes
