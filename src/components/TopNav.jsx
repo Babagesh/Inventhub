@@ -10,7 +10,7 @@ const TopNav = () => {
       </div>
 
       <div className = 'flex flex-row gap-8'>
-         <Link to = '/home' className = 'text-lg font-medium hover:text-blue-600 transition-colors'>Home </Link>
+         <Link to = '/' className = 'text-lg font-medium hover:text-blue-600 transition-colors'>Home </Link>
          <Link to = '/create' className = 'text-lg font-medium hover:text-blue-600 transition-colors'>Invent</Link>
       </div>
     </div>

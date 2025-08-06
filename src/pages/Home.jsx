@@ -1,6 +1,7 @@
 import Search from '../components/Search'
 import {useState, useEffect} from 'react'
 import {supabase} from '../client'
+import Card from '../components/Card'
 
 const Home = () => {
     const [posts, setPosts] = useState([])
@@ -75,21 +76,22 @@ const Home = () => {
             <Search 
                 submit={filterPosts}
             />
-            <div className = 'grid'>
+            <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 w-full px-4'>
                 {
                     posts.filter(post => {
-                        let keyword = filters.search;
-                        return keyword != '' ? post.type.includes(keyword) : true;
+                        let keyword = filters.search.toLowerCase();
+                        return keyword != '' ? post.name.toLowerCase().includes(keyword) : true;
                     }).map(post => {
                         return (
                         <div key = {post.id} className = ''>
-                            <h1> {post.name}</h1>
+                            <Card 
+                                invention = {post}
+                            />
                         </div>
                         );
                     }
                     )
                 }
-               
             </div>
         </div>
     )
